@@ -11,7 +11,7 @@
 * Возможность задавать время и количество траекторий N для составления вектора распределения на основе статистики.
 * Отображения одной из возможных траекторий задаваемой пользователем длины
 
-![Скриншот приложения](https://github.com/Kostyak7/TRP_task1/blob/main/resources/img/app_screenshot.png)
+![Скриншот приложения](https://github.com/Kostyak7/TRP_task1/blob/main/resources/app_screenshot.png)
 
 
 ####Установка
