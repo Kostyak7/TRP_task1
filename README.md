@@ -1,23 +1,32 @@
-# Neurogeometry WEB-section
+# Марковские цепи
 
-The easiest way to set and run local server is to run an executable build file (only for Windows)
+Данная программа помогает в визуализации и анализе марковсих цепей.
 
-LinuxOC requires a more individual approach. 
+####Функционал:
 
-## Set up and run on Windows
+* Задавать матрицу вероятностей и ее проверка на стохастическую
+* Задавать вектор начального распределения
+* Визуализацию возможных переходов между состояниями и группами в виду графа
+* Высчитывание и отображение матрицы вероятностей, вектора распределения, стастического вектора распределения на основе N траекторий в заданный момент времени
+* Возможность задавать время и количество траекторий N для составления вектора распределения на основе статистики.
+* Отображения одной из возможных траекторий задаваемой пользователем длины
+
+![Скриншот приложения](https://github.com/Kostyak7/TRP_task1/blob/main/resources/img/app_screenshot.png)
+
+
+####Установка
+Ниже приведена инструкция для настрйоки и запуска на Windows. Однако настройка на других системах отличается лишь незначительно.
+
+Для начала необходимо создать виртуальное окружение для Python и войти в него
 ```
-build.bat
+python3 -m venv venv
+venv/Scripts/activate
 ```
-
-## Just run on Windows 
+Далее необходимо установить нужные зависимости, это может занять некоторое время
 ```
-build.bat run
+pip install -r requirements.txt
 ```
-
-## Short instruction for LinuxOC
-1) Clone this repository
-2) Create virtual environment at ./WEBService and install packages from requirements.txt
-3) Install npm, if you don't. Then install @vue/cli-service
-4) Go to frontend folder and run ```vue build``` (create folders at ./WEBService `static` and `templates`, if it needs)
-5) Change path to `algorithm` in ./WEVService/main/wrapper.py
-6) Run `python3 manage.py runserver`
+Как только все требуемые библиотеки будут установлены можно запускать саму программу
+```
+python3 main.py
+```
